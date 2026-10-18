@@ -77,3 +77,34 @@ area(-1.0, 4.0); => -1 değerini dönmeli.
 area(5.0); => 78.53975 değerini dönmeli
 
 area(-1); => -1 değerini dönmeli.
+
+### 🧪 Testleri Çalıştırma
+
+NextGen üzerinde proje sonuçlarınızı görebilmek için testleri çalıştırmanız gerekmektedir.
+
+1. `ResultAnalyzer.java` dosyasını açın ve şu satırı NextGen proje ekranında görünen kendi bilginizle güncelleyin:
+
+```java id="k2k3xv"
+String userId = "999999";
+```
+
+2. Ardından `MainTest.java` dosyasını çalıştırarak testleri başlatabilirsiniz.
+
+3. Gerektiğinde proje çözümlerinizi kontrol edebilmemiz için kodlarınızı GitHub'a pushlamayı unutmayın.
+
+### ⚠️ Skorun NextGen'e Kaydedilmediyse
+
+Eğer testleri çalıştırdığın halde skorun NextGen'e kaydedilmediyse, önce fork'unun güncel olup olmadığını kontrol et:
+
+1. GitHub reponu aç.
+2. Repo **X commit ahead** ve **X commits behind** şeklinde bir uyarı gösteriyorsa, branch'in güncel değildir.
+3. **Sync fork → Update branch** adımlarını uygula.
+4. Ardından localinde şu komutu çalıştır:
+
+```bash
+   git pull
+```
+
+5. Testleri tekrar çalıştır. Bu adımdan sonra skorun güncellenmiş olacaktır.
+
+> **Not:** Bu kontrolü yapmadan tekrar tekrar test çalıştırmak sorunu çözmez; sorunun kaynağı genellikle fork'un upstream repository ile senkron olmamasıdır.
